@@ -6,3 +6,6 @@ const port = 3000;
 
 app.get("/",(req,res)=>{
 
+
+    const d = new Date();
+    const day = d.getDay();   
