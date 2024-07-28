@@ -16,3 +16,8 @@ app.get("/",(req,res)=>{
       type = "It's a weekend"
       adv = "Have fun."
     }
+res.render("index.ejs",{
+
+        dayType : type,
+        advice : adv,
+    });
