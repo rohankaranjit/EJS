@@ -11,3 +11,8 @@ app.get("/",(req,res)=>{
     const day = d.getDay();   
     let type = "Its a week day."
     let adv = "It's time to work hard"
+
+    if (day ===0 || day === 6){
+      type = "It's a weekend"
+      adv = "Have fun."
+    }
