@@ -21,3 +21,4 @@ res.render("index.ejs",{
         dayType : type,
         advice : adv,
     });
+})
