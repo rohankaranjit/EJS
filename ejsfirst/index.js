@@ -22,3 +22,6 @@ res.render("index.ejs",{
         advice : adv,
     });
 })
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
