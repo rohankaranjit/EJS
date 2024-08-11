@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
+app.post("/submit", (req, res) => {
+  var numbersletter = req.body['fName'].length + req.body['lName'].length;
+  res.render("index.ejs",{
+    noOfLetters : numbersletter,
 
 
 
