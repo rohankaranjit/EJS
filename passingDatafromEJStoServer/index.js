@@ -14,5 +14,11 @@ app.post("/submit", (req, res) => {
   res.render("index.ejs",{
     noOfLetters : numbersletter,
 
+  })
+ });
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
 
 
